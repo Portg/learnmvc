@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<struts>
+
+    <form-beans>
+        <form-bean name="example" type="struts.example.ExampleForm">
+        </form-bean>
+    </form-beans>
+
+    <action-mappings>
+        <action name="example" type="struts.example.ExampleAction" path="example">
+            <forward name="success" value="/WEB-INF/view/exampleSucc.jsp"/>
+            <forward name="failure" value="/WEB-INF/view/exampleFail.jsp"/>
+        </action>
+    </action-mappings>
+
+</struts>
